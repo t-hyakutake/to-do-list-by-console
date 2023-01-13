@@ -16,8 +16,7 @@ while (cmd !== 'exit' && cmd !== null){
     case 'delete':
           console.log('delete')
           console.log('**********')
-  }
-        
+  }      
         cmd = prompt('new,list,delete,exit のいずれかを入力ください')
 }
         console.log('todolistを終了します')
