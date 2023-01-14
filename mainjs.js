@@ -1,6 +1,6 @@
 'use strict'
 let cmd = prompt('new,list,delete,exit のいずれかを入力ください')
-const todo = []
+const todo = ["リハ","ライブ","トーク",'握手会']
 
 while (cmd !== 'exit' && cmd !== null) {
   
@@ -14,7 +14,7 @@ while (cmd !== 'exit' && cmd !== null) {
     let addTodo = prompt('to do リストを追加してください。')
     while (addTodo.length === 0 ){
       console.log(addTodo)
-      console.log(typeofnew addTodo)
+      console.log(typeof addTodo)
        addTodo = prompt('to do リストを追加してください。')
     }
     if (addTodo !== null) {
@@ -33,8 +33,13 @@ while (cmd !== 'exit' && cmd !== null) {
    
   } else if (cmd === 'delete') {
     let del = prompt('削除index番号を入力してください');
-       let delIndex = todo.splice(del - 1,1);
-         console.log(`${delIndex}を削除します`)
+    if (del < todo.length + 1) {
+      let delIndex = todo.splice(del - 1,1);
+        console.log(`${delIndex}を削除します`);
+    //    console.log(delIndex)
+    //  console.log(typeof delIndex)
+    //  console.log(delIndex.length)
+    } 
   } 
   cmd = prompt('new,list,delete,exit のいずれかを入力ください')
 
