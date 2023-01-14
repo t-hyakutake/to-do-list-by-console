@@ -30,3 +30,4 @@ while (cmd !== 'exit' && cmd !== null) {
 }
 console.log('todolistを終了します');
 console.log(todo);
+// 問題 todoをaddしてもどこかでリセットしてしまう。
