@@ -24,10 +24,6 @@ while (cmd !== 'exit' && cmd !== null) {
       // console.log(todo)
       // console.log(typeof todo)
       // console.log(todo.length)
-      // for (let i = 0; i < todo.length; i++) {
-      //     console.log(`${i} ： ${todo[i]}`)
-        
-      // }
     }
     
    
